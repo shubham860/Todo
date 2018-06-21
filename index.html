@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ToDo | R!7V!K</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="jumbotron parallax-window" data-parallax="scroll" data-image-src="images/bg.png">
+      <div class="container">
+        <h1>
+          <i class="fas fa-clipboard-list"></i><br />
+          Hello, User!
+        </h1>
+        <p>
+          Welcome to ToDo...<br>
+          A Better Way to Organise Your Day
+        </p>
+        <div class="row">
+        <div class="col-xs-0 col-lg-3"></div>
+        <div class="col-xs-12 col-lg-6">
+        <div class="contents" id="op">
+          <div class="input-group">
+            <input type="text" class="form-control" id="ip" aria-label="...">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="add">Priority<span class="caret"></span></button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><button type="button" class="btn btn-default" onclick="low();">Low</button></li>
+                    <li><button type="button" class="btn btn-default" onclick="moderate();">Moderate</button></li>
+                    <li><button type="button" class="btn btn-default" onclick="high();">High</button></li>
+                  </ul>
+              </div><!-- /btn-group -->
+          </div><!-- /input-group -->
+          <div class="alert alert-success" role="alert"><input type="checkbox" name="" value=""><label>Low Priority Task</label></div>
+          <div class="alert alert-warning" role="alert"><input type="checkbox" name="" value=""><label>Moderate Priority Task</label></div>
+          <div class="alert alert-danger" role="alert"><input type="checkbox" name="" value=""><label>High Priority Task</label></div>
+        </div>
+        </div>
+        <div class="col-xs-0 col-lg-3"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="javascript/parallax.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="javascript/script.js" charset="utf-8"></script>
+  </body>
+</html>

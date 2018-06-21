@@ -1,0 +1,45 @@
+*
+{
+  font-family: 'Share Tech', sans-serif;
+}
+
+body{
+  /* background: url("../images/bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-color: rgba(50, 75, 100, 0.3);
+  /* max-width: 100%;
+  max-height: 100%; */
+}
+
+.jumbotron{
+  text-align: center;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+.contents{
+  /* max-width: 50%; */
+  margin: auto;
+}
+
+.alert{
+  text-align: left;
+}
+
+.alert > input{
+  margin-right: 20px;
+}
+
+.btn-default{
+  width: 100%;
+}
+
+.input-group{
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"]:checked + label{
+  text-decoration: line-through;
+}
